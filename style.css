@@ -1,0 +1,107 @@
+/* resets */
+/* pushes everything invard */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html,body {
+    height: 100%;
+
+}
+body{
+    font-family: 'lato', sans-serif;
+    color:#eee;
+}
+
+a {
+    color:#eee;
+    text-decoration: none;
+}
+
+
+/* Globals */
+.row,.column{
+    display: flex;
+
+}
+
+
+.column{
+    flex-direction:column;
+
+}
+.vertical-center{
+    align-items: center;
+
+}
+
+.h-center {
+    justify-content: center;   /*justify content is left to righ*/
+
+}
+
+/* custom style */
+
+
+.landing{
+    height: 100vh;
+
+}
+.landing header nav{
+    height:65px;
+}
+
+.landing header nav i.fa-map-marker{
+    font-size: 3rem;
+}
+.landing header nav > * {
+    margin: 0 6%;
+
+}
+.landing .hero {
+    height: calc(100% - 65px);
+}
+.landing .hero h1{
+    font-size: 4rem;
+    margin-bottom: 15px;
+
+
+}
+.landing .hero p{
+    color:#aaa;
+
+}
+
+.landing .hero i{
+font-size: 4rem;
+margin-top:50px;
+
+}
+.landing-bg{
+    background-image: url(https://picsum.photos/1200/1100?image=1064);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top:0;
+    left:0;
+    
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    
+}
+.landing-bg:after{
+    content:'';
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: -1;
+    background: rgba(0,0, 0, 0.6);
+
+}
